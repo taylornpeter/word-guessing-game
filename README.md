@@ -1,6 +1,11 @@
 # word-guessing-game
 A simple word-guessing game made during my Python class online, probably great for beginners.
 
+## Version 1.0.1:
+Changes:
+  - New words and definitions by default.
+  - Players no longer receive a -1 try penalty for guessing the same correctly guessed character.
+
 ## How to add and remove words and definitions:
 Each line of the words.txt file corresponds to each line of the definitions.txt file. Feel free to add and remove words and definitions in the txt files but remember to move to the next line if you want to add a new word and definition.
 

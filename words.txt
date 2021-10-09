@@ -3,3 +3,9 @@ perforate
 timetable
 computer
 programming
+vehicle
+insurance
+stereotype
+conductor
+circulation
+philosophy

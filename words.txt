@@ -9,3 +9,9 @@ stereotype
 conductor
 circulation
 philosophy
+implication
+witness
+asylum
+despise
+prospect
+jurisdiction

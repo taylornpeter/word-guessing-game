@@ -1,5 +1,5 @@
 # word-guessing-game
-A simple word-guessing game made during my Python class online, probably great for beginners.
+A simple word-guessing game made during my Python class online, probably great for beginners to understand how the code works and great for professionals to correct my coding mistakes.
 
 ## Version 1.0.1:
 Changes:

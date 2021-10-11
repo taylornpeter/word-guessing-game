@@ -1,18 +1,24 @@
 import random
 
 # Opening and importing words and definitions from the configuration files
+unstrippedWordsToGuess = []
+unstrippedDefinitions = []
+
 wordsToGuess = []
 definitions = []
 
 wordsFile = open('words.txt','r',encoding='utf-8-sig')
 unstrippedWords = wordsFile.readlines()
-for word in unstrippedWords:
-  # Splitting empty space from the words
+for i in range(0,len(unstrippedWords) - 1,3):
+  unstrippedWordsToGuess.append(unstrippedWords[i])
+
+for i in range(1,len(unstrippedWords) - 1,3):
+  unstrippedDefinitions.append(unstrippedWords[i])
+
+for word in unstrippedWordsToGuess:
   wordsToGuess.append(word.strip('\n'))
-definitionsFile = open('definitions.txt','r',encoding='utf-8-sig')
-unstrippedDefinitions = definitionsFile.readlines()
+
 for definition in unstrippedDefinitions:
-  # Doing the same to the definitions
   definitions.append(definition.strip('\n'))
 
 # Greeting the player
@@ -73,17 +79,17 @@ def main():
             correctlyGuessedLetters.append(guessedLetter)
             score += 50
           print("You have guessed", len(correctlyGuessedLetters), "letters correctly.\n")
+          tries -= 1
 
         elif repeat == True:
           print("This letter has already been guessed\n")
         
         else:
           print("Incorrect guess\n")
+          tries -= 1
           if score >= 25:
             score -= 25
 
-        tries -= 1
-          
         check = False
         positions = []
         repeat = False
@@ -130,4 +136,3 @@ def main():
 
 main()
 wordsFile.close()
-definitionsFile.close()

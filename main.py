@@ -7,7 +7,7 @@ unstrippedDefinitions = []
 wordsToGuess = []
 definitions = []
 
-wordsFile = open('words.txt','r',encoding='utf-8-sig')
+wordsFile = open('config.txt','r',encoding='utf-8-sig')
 unstrippedWords = wordsFile.readlines()
 for i in range(0,len(unstrippedWords) - 1,3):
   unstrippedWordsToGuess.append(unstrippedWords[i])

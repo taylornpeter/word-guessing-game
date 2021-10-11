@@ -1,8 +1,9 @@
 # word-guessing-game
 A simple word-guessing game made during my Python class online, probably great for beginners to understand how the code works and great for professionals to correct my coding mistakes.
 
-## Version 1.0.2:
+## Version 1.1.0:
 Changes:
+  - A new way to configure words and definitions.
   - New words and definitions by default.
 
 ## How to add and remove words and definitions:

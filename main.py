@@ -9,17 +9,17 @@ definitions = []
 
 wordsFile = open('config.txt','r',encoding='utf-8-sig')
 unstrippedWords = wordsFile.readlines()
-for i in range(0,len(unstrippedWords) - 1,3):
+for i in range(0,len(unstrippedWords),3):
   unstrippedWordsToGuess.append(unstrippedWords[i])
 
-for i in range(1,len(unstrippedWords) - 1,3):
+for i in range(1,len(unstrippedWords),3):
   unstrippedDefinitions.append(unstrippedWords[i])
 
 for word in unstrippedWordsToGuess:
-  wordsToGuess.append(word.strip('\n'))
+  wordsToGuess.append(word.strip("\n"))
 
 for definition in unstrippedDefinitions:
-  definitions.append(definition.strip('\n'))
+  definitions.append(definition.strip("\n"))
 
 # Greeting the player
 def greeting():
